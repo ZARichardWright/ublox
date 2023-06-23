@@ -37,6 +37,8 @@
         /// </summary>
         NAV_PVT = 0x0107,
 
+        NAV_PVAT = 0x0117,
+
         /// <summary>
         /// NAV-ODO message
         /// </summary>

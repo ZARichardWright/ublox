@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ublox.Core\ublox.Core.csproj" />
-    <ProjectReference Include="..\ublox\ublox.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>

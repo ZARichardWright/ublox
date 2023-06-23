@@ -23,6 +23,7 @@ namespace ublox.Core
         [Subtype(nameof(MessageId), MessageId.CFG_MSG, typeof(CfgMsgPoll), BindingMode = BindingMode.OneWayToSource)]
         [Subtype(nameof(MessageId), MessageId.CFG_TP5, typeof(CfgTp5))]
         [Subtype(nameof(MessageId), MessageId.NAV_PVT, typeof(NavPvt))]
+        [Subtype(nameof(MessageId), MessageId.NAV_PVAT, typeof(NavPvat))]
         [Subtype(nameof(MessageId), MessageId.NAV_PVT, typeof(NavPvtPoll), BindingMode = BindingMode.OneWayToSource)]
         [Subtype(nameof(MessageId), MessageId.NAV_ATT, typeof(NavAtt))]
         [Subtype(nameof(MessageId), MessageId.NAV_SAT, typeof(NavSat))]
