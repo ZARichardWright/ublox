@@ -67,9 +67,19 @@ namespace ublox.Core.Data
         {
             get
             {
-                var dt = new DateTime(Year, Month, Day, Hour, Minute, Second);
-                var ticks = Nanosecond / Constants.NanosecondsPerTick;
-                return dt.AddTicks(ticks);
+                try
+                {
+                    var dt = new DateTime(Year, Month, Day, Hour, Minute, Second);
+                    var ticks = Nanosecond / Constants.NanosecondsPerTick;
+                    return dt.AddTicks(ticks);
+                }
+                catch
+                {   
+                    var dt = new DateTime();
+                    var ticks = 0;
+                    return dt.AddTicks(ticks);
+                }
+                
             }
 
             set
